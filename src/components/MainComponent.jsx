@@ -211,14 +211,14 @@ const MainComponent = () => {
               {/* Mobile Navbar Functioning */}
               <ul className="lg:hidden w-fit flex flex-col text-lg font-medium gap-1">
                 <li
-                  className={`${status ? "bg-white" : "text-slate-900"} flex items-center gap-2 cursor-pointer transition-all`}
+                  className={`${status ? "" : "text-slate-900"} flex items-center gap-2 cursor-pointer transition-all`}
                   onClick={() => handleMobileClickScroll("aboutRef")}
                 >
                   <div
                     className={`
                     ${
                       activeSection === "about" || activeHoverEffect === "about"
-                        ? status ? "w-16 bg-white" : "w-16 bg-slate-950"
+                        ? status ? "w-16" : "w-16 bg-slate-950"
                         : "w-8 bg-slate-500"
                     }
                      transition-all`}
@@ -226,11 +226,11 @@ const MainComponent = () => {
                       height: "0.15rem",
                     }}
                   ></div>
-                  About
+                  Abouts
                 </li>
                 <li
                   href="#skills"
-                  className={`${status ? "bg-white" : "text-slate-900"} flex items-center gap-2 cursor-pointer transition-all`}
+                  className={`${status ? "" : "text-slate-900"} flex items-center gap-2 cursor-pointer transition-all`}
                   onClick={() => handleMobileClickScroll("skillRef")}
                 >
                   <div
@@ -238,7 +238,7 @@ const MainComponent = () => {
                     ${
                       activeSection === "skills" ||
                       activeHoverEffect === "skills"
-                        ? status ? "w-16 bg-white" : "w-16 bg-slate-950"
+                        ? status ? "w-16" : "w-16 bg-slate-950"
                         : "w-8 bg-slate-500"
                     }
                      transition-all`}
@@ -249,7 +249,7 @@ const MainComponent = () => {
                   Skills
                 </li>
                 <li
-                  className={`${status ? "bg-white" : "text-slate-900"} flex items-center gap-2 cursor-pointer transition-all`}
+                  className={`${status ? "" : "text-slate-900"} flex items-center gap-2 cursor-pointer transition-all`}
                   onClick={() => handleMobileClickScroll("projectRef")}
                 >
                   {" "}
@@ -258,7 +258,7 @@ const MainComponent = () => {
                     ${
                       activeSection === "projects" ||
                       activeHoverEffect === "projects"
-                        ? status ? "w-16 bg-white" : "w-16 bg-slate-950"
+                        ? status ? "w-16" : "w-16 bg-slate-950"
                         : "w-8 bg-slate-500"
                     }
                      transition-all`}
@@ -269,7 +269,7 @@ const MainComponent = () => {
                   Projects
                 </li>
                 <li
-                  className={`${status ? "bg-white" : "text-slate-900"} flex items-center gap-2 cursor-pointer transition-all`}
+                  className={`${status ? "" : "text-slate-900"} flex items-center gap-2 cursor-pointer transition-all`}
                   onClick={() => handleMobileClickScroll("educationRef")}
                 >
                   {" "}
@@ -278,7 +278,7 @@ const MainComponent = () => {
                     ${
                       activeSection === "education" ||
                       activeHoverEffect === "education"
-                        ? status ? "w-16 bg-white" : "w-16 bg-slate-950"
+                        ? status ? "w-16" : "w-16 bg-slate-950"
                         : "w-8 bg-slate-500"
                     }
                      transition-all`}
@@ -291,9 +291,9 @@ const MainComponent = () => {
               </ul>
             </nav>
           </div>
-          <div className={`fixed md:left-0 md:right-auto right-0 top-28 ${status ? "text-slate-950 bg-white": "bg-slate-950 text-white"} md:rounded-tr-lg  rounded-br-md transition-all`}>
+          <div className={`fixed md:left-0 md:right-auto right-0 top-28 ${status ? "text-slate-950 bg-white": "bg-slate-950 text-white"} md:rounded-tr-lg  md:rounded-br-md rounded-tl-md rounded-bl-md transition-all`}>
             <button
-              className={`w-full ${status ? "bg-slate-950 text-white" : "bg-white text-slate-900"} p-2 rounded-tr-md rounded-bl-md transition-all`}
+              className={`w-full ${status ? "bg-slate-950 text-white" : "bg-white text-slate-900"} p-2 md:rounded-tr-md md:rounded-br-md rounded-tl-md rounded-bl-md transition-all`}
               onClick={() => {
                 dispatch(toggle());
               }}
