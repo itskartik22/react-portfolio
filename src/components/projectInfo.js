@@ -1,5 +1,5 @@
 import skillsphere from "./../img/skillsphere.png";
-import urlshotner from "./../img/url-shortner.png"
+import urlshotner from "./../img/url-shortner.png";
 import Todo from "./../img/to-do-list.png";
 import portfolio1 from "./../img/animated-portfolio.png";
 const projectList = [
@@ -9,28 +9,31 @@ const projectList = [
     text: "It is a real-time chat application designed to provide an intuitive and seamless communication experience. Built with the MERN stack, it leverages modern technologies to support real-time messaging, live updates, and personalized features.",
     description: (
       <>
-        <strong>Key features of Skillsphere include:</strong>
+        <strong>Key features of Hichat include:</strong>
         <li>
-          User and Course Management: Comprehensive CRUD operations for users
-          and courses.
+          Real-time Messaging: Send and receive messages instantly using
+          Socket.IO.
         </li>
         <li>
-          Enrollment Process: Streamlined course enrollment functionality,
-          followed by immediate video access.
+          Recent Chat Previews: Display the latest messages for each contact.
         </li>
-        <li> Profile Management: Detailed user profile management.</li>{" "}
         <li>
-          Admin Dashboard: A powerful dashboard for managing courses and users,
-          providing administrators with full control over platform operations.
+          {" "}
+          Unread Message Counts: Highlight unseen messages for active
+          conversations.
         </li>{" "}
+        <li>
+          Online Status Indicators: Show live status updates of contacts.
+        </li>{" "}
+        <li>Search Functionality: Easily find and access conversations.</li>{" "}
       </>
     ),
-    img: './images/hichat.png',
+    img: "./images/hichat.png",
     period: "10 Oct 24 - 30 Nov 24",
     techStack: [
       "Socket.io",
       "React",
-      "Redux-toolkit",  
+      "Redux-toolkit",
       "Express",
       "NodeJs",
       "MongoDB",
@@ -100,24 +103,24 @@ const projectList = [
           for unique IDs, with MongoDB as the database and EJS for rendering the
           user interface.
         </p>
-          <li>Converts lengthy URLs into compact, shareable links</li>
-          <li>
-            Utilizes <code>shortid</code> to generate unique,
-            collision-resistant short IDs
-          </li>
-          <li>
-            MongoDB efficiently stores original and shortened URLs for easy
-            retrieval
-          </li>
-          <li>Frontend is built with EJS (Embedded JavaScript) templates</li>
-          <li>
-            Offers a dynamic and user-friendly interface for URL submission and
-            management
-          </li>
-          <li>
-            Suitable for both personal use and integration into larger projects,
-            providing a streamlined solution for URL shortening needs
-          </li>
+        <li>Converts lengthy URLs into compact, shareable links</li>
+        <li>
+          Utilizes <code>shortid</code> to generate unique, collision-resistant
+          short IDs
+        </li>
+        <li>
+          MongoDB efficiently stores original and shortened URLs for easy
+          retrieval
+        </li>
+        <li>Frontend is built with EJS (Embedded JavaScript) templates</li>
+        <li>
+          Offers a dynamic and user-friendly interface for URL submission and
+          management
+        </li>
+        <li>
+          Suitable for both personal use and integration into larger projects,
+          providing a streamlined solution for URL shortening needs
+        </li>
       </>
     ),
     img: urlshotner,
